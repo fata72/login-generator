@@ -22,4 +22,10 @@ public class LoginGeneratorTest {
         assertTrue(ls.loginExists("PDUR"));
     }
 
+    @Test
+    public void generateLoginForSameName() {
+        lg.generateLoginForNomAndPrenom("Ralling", "John");
+        assertTrue(ls.loginExists("JRAL2"));
+    }
+
 }
